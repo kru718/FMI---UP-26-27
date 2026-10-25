@@ -1,0 +1,19 @@
+#include <iostream>
+#include <format>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int diameter;
+	cin >> diameter;
+
+	int radius = diameter / 2;
+
+	double circleCircumfrance = radius * 2 * 3.14;
+	double circleArea = radius * radius * 3.14;
+
+	cout << format("Area: {}", circleArea) << endl;
+	cout << "Perimeter: " << setprecision(3) << circleCircumfrance << endl;
+
+	return 0;
+}
